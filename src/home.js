@@ -14,7 +14,7 @@ export const home = function(){
     descriptionDiv.appendChild(descriptionImage);
     const descriptionP = document.createElement("p");
     descriptionP.textContent = `
-        We serve a variety of dishes have that been a staple in the past. Everything from the so-called
+        We serve a variety of dishes that have been a staple in the past. Everything from the so-called
         burgers, french fries, donuts, and hotdogs.
     `;
     descriptionDiv.appendChild(descriptionP);
