@@ -68,20 +68,32 @@ footer {
     gap: 10px;
 }
 
-.link > button {
+.link button {
     font-size: 1.5rem;
     padding: 10px;
     cursor: pointer;
-    color: var(--header-font-color);
     background-color: transparent;
-    transition: all 0.5s;
+    transition: all 0.4s;
     border-radius: 10px;
     border: 1px solid white;
 }
 
 .link > button:hover {
     font-size: 1.6rem;
-    background-color: var(--background-color);
+    background-image: url("./assets/images/glitch-background.gif");
+    background-position: center;
+    background-size: contain;
+
+}
+
+.button-text {
+    color: var(--header-font-color);
+    display: inline-block;
+    opacity: 1;
+}
+
+.link > button:hover .button-text {
+    animation: fadeInOut 0.2s ease-in-out forwards infinite;
 }
 
 .link > button.active {
@@ -169,3 +181,11 @@ h1 {
     width: 200px;
 }
 
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.1;
+    }
+  }
