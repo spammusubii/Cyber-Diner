@@ -7,7 +7,7 @@ export const menu = function(){
     const contentDiv = document.querySelector("#content");
 
     const headline = document.createElement("h1");
-    headline.textContent = "Menu"
+    headline.textContent = "Menu";
     contentDiv.appendChild(headline);
 
     const foodItems = [

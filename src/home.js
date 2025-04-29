@@ -4,8 +4,7 @@ export const home = function(){
     const contentDiv = document.querySelector("#content");
 
     const headline = document.createElement("h1");
-    headline.classList = "headline"
-    headline.textContent = "Link's Sit-In Diner";
+    headline.textContent = "Cyber Diner";
     contentDiv.appendChild(headline);
     
     const descriptionDiv = document.createElement("div");

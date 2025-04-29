@@ -140,10 +140,7 @@ button {
 
 h1 {
     font-size: 4em;
-    text-align: center;
-}
-
-.headline {
+    margin: 15px;
     text-align: center;
 }
 
@@ -155,7 +152,6 @@ h1 {
 }
 
 .content-item-container > h2 {
-    text-decoration: underline;
     align-self: flex-start;
 }
 
