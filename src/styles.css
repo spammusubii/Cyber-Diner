@@ -56,8 +56,12 @@ body {
 }
 
 footer {
-    color: white;
     align-self: flex-end;
+    text-align: center;
+}
+
+footer > p {
+    color: white;
 }
 
 .tab-links {
@@ -187,4 +191,4 @@ h1 {
     50% {
       opacity: 0.1;
     }
-  }
+}
