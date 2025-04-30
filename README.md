@@ -1,7 +1,7 @@
-# ⚡ FutureBite: A Cyberpunk Restaurant Website
+# ⚡ Cyber Diner: A Cyberpunk Restaurant Website
 ## Developer: Justin K
 
-Welcome to **FutureBite**, a neon-lit, cyberpunk-themed restaurant website from the distant future. This project showcases extinct foods like burgers, hotdogs, fries, and donuts in a world where such meals are a nostalgic luxury. Designed using **HTML, CSS, and JavaScript**, and bundled with **Webpack**, the site demonstrates dynamic content loading using a modular JavaScript architecture.
+Welcome to **Cyber Diner**, a neon-lit, cyberpunk-themed restaurant website from the distant future. This project showcases extinct foods like burgers, hotdogs, fries, and donuts in a world where such meals are a nostalgic luxury. Designed using **HTML, CSS, and JavaScript**, and bundled with **Webpack**, the site demonstrates dynamic content loading using a modular JavaScript architecture.
 
 ---
 
