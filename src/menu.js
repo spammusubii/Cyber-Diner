@@ -6,10 +6,6 @@ import donut from "./assets/images/donut.jpg";
 export const menu = function(){
     const contentDiv = document.querySelector("#content");
 
-    const headline = document.createElement("h1");
-    headline.textContent = "Menu";
-    contentDiv.appendChild(headline);
-
     const foodItems = [
         {
             food: "Cheeseburger",
@@ -50,39 +46,39 @@ export const menu = function(){
         }
     ];
 
-    function initialize(){
-        foodItems.forEach( (item) => {
-            const foodContainerDiv = document.createElement("div");
-            foodContainerDiv.classList.add("content-item-container");
+    const headline = document.createElement("h1");
+    headline.textContent = "Menu";
+    contentDiv.appendChild(headline);
 
-            const heading = document.createElement("h2");
-            heading.textContent = item.food;
-            foodContainerDiv.appendChild(heading);
+    foodItems.forEach( (item) => {
+        const foodContainerDiv = document.createElement("div");
+        foodContainerDiv.classList.add("content-item-container");
 
-            const ul = document.createElement("ul");
+        const heading = document.createElement("h2");
+        heading.textContent = item.food;
+        foodContainerDiv.appendChild(heading);
 
-            const imgLi = document.createElement("li");
-            const img = document.createElement("img");
-            img.src = item.url;
-            img.classList.add("foodImage");
-            imgLi.appendChild(img);
-            ul.appendChild(imgLi);
+        const ul = document.createElement("ul");
 
-            const descriptionLi = document.createElement("li");
-            const description = document.createElement("p");
-            description.textContent = item.description;
-            descriptionLi.appendChild(description);
-            ul.appendChild(descriptionLi);
+        const imgLi = document.createElement("li");
+        const img = document.createElement("img");
+        img.src = item.url;
+        img.classList.add("foodImage");
+        imgLi.appendChild(img);
+        ul.appendChild(imgLi);
 
-            const priceLi = document.createElement("li");
-            priceLi.textContent = `Price: ${item.price}`;
-            priceLi.classList.add("price")
-            ul.appendChild(priceLi);
+        const descriptionLi = document.createElement("li");
+        const description = document.createElement("p");
+        description.textContent = item.description;
+        descriptionLi.appendChild(description);
+        ul.appendChild(descriptionLi);
 
-            foodContainerDiv.appendChild(ul);
-            contentDiv.appendChild(foodContainerDiv);
-        });
-    }
+        const priceLi = document.createElement("li");
+        priceLi.textContent = `Price: ${item.price}`;
+        priceLi.classList.add("price")
+        ul.appendChild(priceLi);
 
-    initialize();
+        foodContainerDiv.appendChild(ul);
+        contentDiv.appendChild(foodContainerDiv);
+    });
 }

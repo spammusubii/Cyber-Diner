@@ -2,6 +2,21 @@ import cyberpunkStore from "./assets/images/cyberpunkStore.png"
 
 export const home = function(){
     const contentDiv = document.querySelector("#content");
+    const hoursOfOperation = [
+        "Sunday: 12pm - 12am",
+        "Monday: 11am - 4am",
+        "Tuesday: 11am - 4am",
+        "Wednesday: 11am - 4am",
+        "Thursday: 11am - 4am",
+        "Friday: 11am - 6am",
+        "Saturday: 11am - 6am",
+    ]
+    const address = [
+        "Neon Spire District, Sector 7",
+        "Unit 314B, Chromehaven Tower",
+        "8824 Ion Drift Avenue",
+        "New Edo Megacity, 2094-ZX"
+    ];
 
     const headline = document.createElement("h1");
     headline.textContent = "Cyber Diner";
@@ -28,15 +43,7 @@ export const home = function(){
     hoursContainer.appendChild(hoursh2)
     const hoursList = document.createElement("ul");
     hoursList.classList.add("hoursList")
-    const hoursOfOperation = [
-        "Sunday: 12pm - 12am",
-        "Monday: 11am - 4am",
-        "Tuesday: 11am - 4am",
-        "Wednesday: 11am - 4am",
-        "Thursday: 11am - 4am",
-        "Friday: 11am - 6am",
-        "Saturday: 11am - 6am",
-    ]
+    
     hoursOfOperation.forEach((hour) => {
         const li = document.createElement("li");
         li.classList.add("hour");
@@ -52,12 +59,6 @@ export const home = function(){
     addressh2.textContent = "Location";
     addressDiv.appendChild(addressh2);
     const addressList = document.createElement("ul");
-    const address = [
-        "Neon Spire District, Sector 7",
-        "Unit 314B, Chromehaven Tower",
-        "8824 Ion Drift Avenue",
-        "New Edo Megacity, 2094-ZX"
-    ];
     address.forEach(line => {
         const li = document.createElement("li");
         li.textContent = line;
@@ -65,4 +66,5 @@ export const home = function(){
     })
     addressDiv.appendChild(addressList);
     contentDiv.appendChild(addressDiv);
+    
 }
