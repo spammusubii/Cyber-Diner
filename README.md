@@ -1,5 +1,5 @@
 # Cyber Diner: A Cyberpunk Restaurant Website
-## Developer: Justin K
+## Developer: Justin Kim
 ## Site: https://spammusubii.github.io/Cyber-Diner/
 
 Welcome to **Cyber Diner**, a cyberpunk-themed restaurant website from the distant future. This project showcases extinct foods like burgers, hotdogs, fries, and donuts in a world where such meals are a nostalgic luxury. Designed using **HTML, CSS, and JavaScript**, and bundled with **Webpack**, the site demonstrates dynamic content loading using a modular JavaScript architecture.
