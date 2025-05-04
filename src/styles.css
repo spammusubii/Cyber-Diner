@@ -37,7 +37,7 @@
 html {
     width: 100vw;
     height: 100vh;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 body {
@@ -52,12 +52,14 @@ body {
     justify-items: center;
     padding: 20px;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
 }
 
 footer {
     align-self: flex-end;
     text-align: center;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 footer > p {
@@ -73,7 +75,7 @@ footer > p {
 }
 
 .link button {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 10px;
     cursor: pointer;
     background-color: transparent;
@@ -102,14 +104,14 @@ footer > p {
 }
 
 .link > button.active {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     background-color: var(--background-color);
 }
 
 #content {
     color: white;
     width: 75%;
-    min-width: 320px;
+    min-width: 300px;
     border: 2px solid white;
     border-radius: 12px;
     padding: 10px;
@@ -126,7 +128,7 @@ footer > p {
     padding: 15px;
     border-radius: 8px;
     background-color: var(--background-color);
-    width: clamp(200px, 80%, 500px);
+    width: clamp(250px, 80%, 500px);
     margin-bottom: 50px;
     font-size: 1.3em;
 }
@@ -151,7 +153,6 @@ h1 {
 }
 
 .content-item-container {
-    font-size: 1.4em;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -168,6 +169,7 @@ h1 {
     flex-direction: column;
     gap: 8px;
     letter-spacing: 3px;
+    font-size: 1rem;
 }
 
 .price {
