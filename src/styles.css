@@ -37,7 +37,7 @@
 html {
     width: 100vw;
     height: 100vh;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 body {
@@ -85,7 +85,7 @@ footer > p {
 }
 
 .link > button:hover {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     background-image: url("./assets/images/glitch-background.gif");
     background-position: center;
     background-size: contain;
@@ -110,17 +110,19 @@ footer > p {
 
 #content {
     color: white;
+    max-width: 1000px;
     width: 75%;
-    min-width: 300px;
+    min-width: 335px;
     border: 2px solid white;
     border-radius: 12px;
-    padding: 10px;
+    padding: 15px;
     position: relative;
     background-color: #f71af84f;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 #content > div {
@@ -128,9 +130,9 @@ footer > p {
     padding: 15px;
     border-radius: 8px;
     background-color: var(--background-color);
-    width: clamp(250px, 80%, 500px);
+    width: clamp(300px, 80%, 500px);
     margin-bottom: 50px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 h1,
