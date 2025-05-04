@@ -98,7 +98,7 @@ footer > p {
 }
 
 .link > button:hover .button-text {
-    animation: fadeInOut 0.2s ease-in-out forwards infinite;
+    animation: fadeInOut 0.9s ease-in-out forwards infinite;
 }
 
 .link > button.active {
